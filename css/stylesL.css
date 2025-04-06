@@ -27,54 +27,74 @@ nav a {
 	padding: 0 1.5rem;
 }
 
-.hero {
-	background-color: magenta
+
+nav {
+  background-color: #3498db; /* Light blue */
+  padding: 10px;
 }
 
-.hero-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	height: 95vh;
-	padding: 3rem calc((100w - 1300px) / 2);
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.column-left {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	color: black;
-	padding 0rem 2 rem;  
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.column-left p {
-	margin-bottom: 2rem;
-	font-size: 1.5rem;
-	line-height: 1.5;
+nav a:hover {
+  background-color: #D000AE; /* Slightly darker */
+  transform: scale(1); /* Slight zoom on hover */
 }
 
-.column-left h1 {
-	margin-bottom: 1rem;
-	font-size: 3rem;
+.container-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-button{
-	padding: 1rem 3rem;
-	font-size: 1rem;
-	border: none;
-	color: magenta;
-	background color: black;
-	cursos: pointer;
+.col {
+    display: block; /* Ensures the column is treated as a block element */
+    box-sizing: border-box;
+    width: 100%; /* Default: columns take full width */
 }
 
-button:hover {
-	background: white;
-	color: black;
-	
+.s12 {
+    width: 100%; /* The column takes the full width of the container on small screens */
+    padding: 0 15px; /* Optional: adjusts the column's spacing in grid systems */
 }
 
+.16 {
+    width: 16.6666%; /* This is 2 columns of a 12-column grid system (assuming .16 means 2/12 columns) */
+    padding: 0 15px; /* Optional: adjusts the column's spacing in grid systems */
+}
 
+.row {
+    display: flex; /* Ensures items in the row are displayed in a flex container */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    margin-left: -15px; /* Compensates for column padding, ensuring proper alignment */
+    margin-right: -15px; /* Compensates for column padding, ensuring proper alignment */
+}
 
+.responsive-imag {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures images are block elements */
+}
+
+.materialboxed {
+    -webkit-transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s;
+    z-index: 1;
+}
 
 
 

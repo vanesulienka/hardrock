@@ -135,27 +135,288 @@ nav a:hover {
   flex-direction: row-reverse;  /* Reverse the order of the flex items */
 }
 
+.parallax-container {
+    position: relative;
+    height: 600px; /* Adjust based on how large you want your parallax effect to be */
+    overflow: hidden;
+}
+
 .parallax {
-  background-image: url(""); /* Set your background image */
-  height: 500px; /* Height of the parallax section */
-  background-attachment: fixed; /* This keeps the background fixed while scrolling */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents background image repetition */
-  background-size: cover; /* Ensures the background image covers the entire section */
-  position: relative; /* Helps with layering content */
-  color: white; /* Text color */
-  text-align: center; /* Centers the text */
-  display: flex; /* Allows flexbox layout */
-  justify-content: center; /* Centers the content horizontally */
-  align-items: center; /* Centers the content vertically */
+    background-image: url("../images/heads.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
 
-/* Content Style */
+.parallax-2 {
+    background-image: url("../images/easter.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .content {
-  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay on the content */
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 80%;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content-section {
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.parallax-container {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.venue-name {
+  font-size: 4rem;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin: 1rem 0;
+}
+
+.cta-button {
+  background-color: red;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: darkred;
 }
 
 
+
+.carousel-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 2rem 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-item {
+  flex: 0 0 250px;
+  scroll-snap-align: start;
+  background: #1a1a1a;
+  color: magenta;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.carousel-heading {
+  font-family: 'Orbitron', sans-serif; /* or 'Monoton', 'Audiowide', etc. */
+  font-size: 3rem;
+  text-align: center;
+  color: magenta; /* neon green */
+  text-shadow: 0 0 5px magenta,
+               0 0 10px black,
+               0 0 20px black,
+               0 0 40px black,
+               0 0 80px black;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.stay-connected {
+  background-color: magenta;
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.newsletter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.newsletter-text {
+  flex: 1 1 45%;
+}
+
+.newsletter-text h2 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.newsletter-text p {
+  font-size: 1.0rem;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  flex: 1 1 45%;
+}
+
+.newsletter-form form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.newsletter-form button {
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: darkmagenta;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .newsletter-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form form {
+    flex-direction: column;
+  }
+
+ .newsletter-form input,
+ .newsletter-form button {
+    width: 100%;
+  }
+	
+
+	
+	
+	
+	
+.logo {
+  width: 120px;  /* or whatever size looks right */
+  height: auto;  /* keeps the image from getting squished */
+}
+	
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  margin-top: 30px;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}

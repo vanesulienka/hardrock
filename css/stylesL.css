@@ -84,19 +84,78 @@ nav a:hover {
     margin-right: -15px; /* Compensates for column padding, ensuring proper alignment */
 }
 
-.responsive-imag {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Ensures images are block elements */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
 
-.materialboxed {
-    -webkit-transition: opacity .3s, transform .3s;
-    transition: opacity .3s, transform .3s;
-    z-index: 1;
+.boxed-image {
+  border: 5px solid magenta;
+  border-radius: 12px;
+  padding: 5px magenta;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 400px;
+  transition: transform 0.3s ease;
+  margin-left: 20px
 }
 
+.boxed-image:hover {
+  transform: scale(1.03);
+}
 
+.black-text {
+  color: #000 !important;
+  font-family: 'Roboto', sans-serif;
+  margin-left: px; /* spacing from image!!!!!!!!!!! */
+}
 
+.image-text-container {
+  display: flex;
+  align-items: center; /* vertically align */
+  gap: 50px; /* optional spacing between items */
+}
+ 
+.text-content h2,
+.text-content p {
+  margin: 0;
+  padding: 2px 0;
+}
+
+.text-content h2 {
+  margin-bottom: 10px;
+}
+.text-content {
+  display: flex;
+  flex-direction: column; /* Stack heading and text vertically */
+  justify-content: center; /* Align content from the top */
+}
+
+.reverse-order {
+  flex-direction: row-reverse;  /* Reverse the order of the flex items */
+}
+
+.parallax {
+  background-image: url(""); /* Set your background image */
+  height: 500px; /* Height of the parallax section */
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents background image repetition */
+  background-size: cover; /* Ensures the background image covers the entire section */
+  position: relative; /* Helps with layering content */
+  color: white; /* Text color */
+  text-align: center; /* Centers the text */
+  display: flex; /* Allows flexbox layout */
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+}
+
+/* Content Style */
+.content {
+  background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay on the content */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+}
 
 

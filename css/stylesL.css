@@ -2,7 +2,10 @@
 /* CSS Document */
  
 
-body 
+body {
+  background-color: #101010;
+  color: white;
+}
 
 nav {
 	height: 80px; 
@@ -29,7 +32,7 @@ nav a {
 
 
 nav {
-  background-color: #3498db; /* Light blue */
+  background-color: magenta; /* Light blue */
   padding: 10px;
 }
 
@@ -105,7 +108,7 @@ nav a:hover {
 }
 
 .black-text {
-  color: #000 !important;
+  color: white!important;
   font-family: 'Roboto', sans-serif;
   margin-left: px; /* spacing from image!!!!!!!!!!! */
 }
@@ -238,7 +241,7 @@ nav a:hover {
 .carousel-item {
   flex: 0 0 250px;
   scroll-snap-align: start;
-  background: #1a1a1a;
+  background: #343434;
   color: magenta;
   border-radius: 12px;
   padding: 1rem;
@@ -361,16 +364,62 @@ nav a:hover {
  .newsletter-form button {
     width: 100%;
   }
+}
 	
+.about-us {
+    background-color: #F9F9F9;
+    min-height: 60vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us-content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #FD03B3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-us p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        padding: 20px 10px;
+    }
+
+    .about-us-content {
+        padding: 15px;
+    }
+
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+}
 
 	
 	
-	
-	
-.logo {
-  width: 120px;  /* or whatever size looks right */
-  height: auto;  /* keeps the image from getting squished */
-}
+--------- 
 	
 .footer {
   background-color: #111;
@@ -381,15 +430,52 @@ nav a:hover {
 .footer-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* prevents wrapping */
   gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .footer-logo img {
-  width: 100px;
+  width: 120px; /* controls actual logo size */
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 60px;
+  background-color: white;
+}
+
+	
+	
+
+	
+	
+--------- 
+	
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* prevents wrapping */
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 120px; /* controls actual logo size */
+  height: auto;
+  object-fit: contain;
 }
 
 .footer-divider {
@@ -420,3 +506,16 @@ nav a:hover {
   color: #aaa;
   font-size: 0.9rem;
 }
+	
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+ .footer-divider {
+    display: none;
+  }
+	
+	---------

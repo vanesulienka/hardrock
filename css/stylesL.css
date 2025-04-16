@@ -109,6 +109,17 @@ nav a:hover {
   flex-direction: row-reverse;  /* Reverse the order of the flex items */
 }
 
+.dark-bg-wrapper {
+  background-color: #1a1a1a;
+  padding: 60px 20px; /* optional: gives some breathing room */
+}
+
+
+
+
+
+
+
 .parallax-container {
     position: relative;
     height: 600px; /* Adjust based on how large you want your parallax effect to be */
@@ -1012,30 +1023,48 @@ html, body {
 .cta-content {
   position: relative;
   z-index: 2;
+  max-width: 3000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.cta-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cta-content h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
+  font-size: 5.3rem;
+  font-weight: 700;
   color: #FD03B3;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   margin-bottom: 20px;
 }
 
+.hover-pop:hover {
+  transform: scale(1.4);
+  text-shadow: 0 0 20px #FD03B3;
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
 .cta-content p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 40px;
 }
 
 .cta-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .cta-btn {
   background-color: #FD03B3;
-  padding: 15px 30px;
+  padding: 18px 40px;
+  font-size: 1.2rem; 
   border: none;
   border-radius: 50px;
   color: #000;
@@ -1057,7 +1086,7 @@ html, body {
 
 .cta-btn.alt:hover {
   background-color: #FD03B3;
-  color: #000;
+  color: #FFFFFF;
 }
 
 
@@ -1170,34 +1199,6 @@ html, body {
   background-color: white;
   margin: 10px auto 0;
   border-radius: 2px;
-}
-
-
-.pit-heading-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center both horizontally */
-  gap: 2rem;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.book-now-btn {
-  background-color: #FD03B3;
-  color: white;
-  padding: 1.2rem 2.5rem;
-  font-size: 1.4rem;
-  border-radius: 8px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.3s;
-  box-shadow: 0 0 15px rgba(253, 3, 179, 0.4);
-  white-space: nowrap;
-}
-
-.book-now-btn:hover {
-  background-color: #c10291;
-  transform: translateY(-3px);
 }
 
 .venue-tagline {
@@ -1350,6 +1351,22 @@ html, body {
 
 .cta-button.pink:hover {
   background-color: #ff69c9;
+}
+.booking-page-button {
+  background-color: #FD03B3;
+  color: white;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px rgba(253, 3, 179, 0.5);
+  display: inline-block;
+}
+
+.booking-page-button:hover {
+  background-color: #c10291;
 }
 
 

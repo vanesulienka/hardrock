@@ -16,32 +16,9 @@ nav {
 	padding: 0rem calc((100w - 1300px)/2);
 }
 
-.logo {
-	color: silver;
-	font-size: 1.5rem;
-	font-weight: bold;
-	font-style: italic;
-	padding: 0 2rem;
-}
-
-nav a {
-	text-decoration: none;
-	color: black;
-	padding: 0 1.5rem;
-}
-
-
 nav {
   background-color: #FD03B3; /* Light blue */
   padding: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav ul {
@@ -50,10 +27,55 @@ nav ul {
   gap: 20px;
 }
 
+nav a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
 nav a:hover {
   background-color: #D000AE; /* Slightly darker */
   transform: scale(1); /* Slight zoom on hover */
 }
+
+.logo {
+	color: silver;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-style: italic;
+	padding: 0 2rem;
+}
+
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:not(.logo-link):hover {
+  background-color: #D000AE; /* Slightly darker */
+  transform: scale(1); /* Slight zoom on hover */
+}
+
+.logo-link:hover {
+  background-color: transparent !important;
+}
+
+.logo-link img {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.logo-link:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
+
 
 
 .responsive-img {
@@ -129,7 +151,7 @@ nav a:hover {
 }
 
 .parallax {
-    background-image: url("../images/heads.jpg");
+    background-image: url("../images/mainpit.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -138,7 +160,7 @@ nav a:hover {
 }
 
 .parallax-2 {
-    background-image: url("../images/easter.jpg");
+    background-image: url("../images/mainpit3.png");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -479,6 +501,12 @@ nav a:hover {
   border-radius: 2px;
 }
 
+.team-member:hover {
+  border-color: #FD03B3;
+  box-shadow: 0 0 15px #FD03B3;
+  transform: translateY(-5px);
+}
+
 .about-text {
   max-width: 500px;
 }
@@ -705,7 +733,7 @@ nav a:hover {
 
 .gallery img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
   border-radius: 12px;
   border: 3px solid #FD03B3;
@@ -1381,6 +1409,7 @@ html, body {
   color: white;
   padding: 1rem 2rem;
   font-weight: bold;
+  font-size: 1rem;
   border-radius: 8px;
   border: none;
   text-decoration: none;

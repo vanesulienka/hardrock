@@ -89,6 +89,12 @@ nav a:not(.logo-link):hover {
   transform: scale(1.1);
 }
 
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 
 
@@ -1444,8 +1450,155 @@ html, body {
   background-color: #c10291;
 }
 
+@media (max-width: 1024px) {
+  .cta-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-items ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item {
+    flex: 0 0 90%;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .image-text-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .boxed-image {
+    width: 90%;
+    margin: auto;
+  }
+}
 
 
+
+.corporate-hero {
+  background-color: #FD03B3;
+  padding: 2rem 2rem;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+}
+
+/* Layout Wrapper */
+.corporate-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+
+
+
+/* Sidebar Nav */
+.sidebar {
+  background-color: #FD03B3;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  display: block;
+}
+
+.sidebar h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-heading {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: text-shadow 0.3s;
+}
+
+.sidebar-heading:hover {
+  text-shadow: 0 0 5px white;
+}
+
+.sidebar-sub a {
+  display: block;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  transition: text-shadow 0.3s;
+}
+
+.sidebar-sub a:hover {
+  text-shadow: 0 0 5px white;
+}
+
+/* Main Content */
+.corporate-content {
+  flex: 3;
+  padding: 1rem;
+}
+
+.corporate-content section {
+  margin-bottom: 3rem;
+}
+
+.corporate-content h2 {
+  font-size: 2rem;
+  color: #FD03B3;
+  margin-bottom: 1rem;
+}
+
+.corporate-content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+/* Styled Image */
+.boxed-image {
+  border: 5px solid #FD03B3;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 400px;
+  margin-bottom: 1rem;
+  display: block;
+}
 
 
 

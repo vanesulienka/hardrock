@@ -1589,16 +1589,21 @@ html, body {
 }
 
 /* Styled Image */
-.boxed-image {
+.boxed-image-cor {
   border: 5px solid #FD03B3;
   border-radius: 12px;
   padding: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 100%;
-  width: 400px;
+  width: 95%;
   margin-bottom: 1rem;
   display: block;
 }
+
+#corporate-page h3 {
+  color: #FD03B3;
+}
+
 
 
 

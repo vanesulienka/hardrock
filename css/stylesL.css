@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
 
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -7,14 +6,14 @@
 
 body {
   background-color: #101010;
-  color: white;
+  color: #EFEFEC;
 }
 
 body {
   font-family: 'Kanit', serif;
-  font-weight: 400; /* adjust if you want lighter/heavier text */
-  color: #fff; /* or whatever your default text color is */
-  background-color: #000; /* optional */
+  font-weight: 400; 
+  color: #EFEFEC; 
+  background-color: #000; 
 }
 
 h1, h2, h3 {
@@ -34,7 +33,7 @@ nav {
 }
 
 nav {
-  background-color: #FD03B3; /* Light blue */
+  background-color: #FD03B3;
   padding: 10px;
 }
 
@@ -46,7 +45,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #EFEFEC;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -54,8 +53,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #D000AE; /* Slightly darker */
-  transform: scale(1); /* Slight zoom on hover */
+  background-color: #D000AE; 
+  transform: scale(1); 
 }
 
 .logo {
@@ -72,8 +71,8 @@ nav a:hover {
 }
 
 nav a:not(.logo-link):hover {
-  background-color: #D000AE; /* Slightly darker */
-  transform: scale(1); /* Slight zoom on hover */
+  background-color: #D000AE; 
+  transform: scale(1);
 }
 
 .logo-link:hover {
@@ -94,12 +93,6 @@ nav a:not(.logo-link):hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-
-
-
-
-
 
 .responsive-img {
   max-width: 100%;
@@ -146,25 +139,19 @@ nav a:not(.logo-link):hover {
 }
 .text-content {
   display: flex;
-  flex-direction: column; /* Stack heading and text vertically */
-  justify-content: center; /* Align content from the top */
+  flex-direction: column; 
+  justify-content: center; 
   max-width: 500px;
 }
 
 .reverse-order {
-  flex-direction: row-reverse;  /* Reverse the order of the flex items */
+  flex-direction: row-reverse;  
 }
 
 .dark-bg-wrapper {
   background-color: #1a1a1a;
-  padding: 60px 20px; /* optional: gives some breathing room */
+  padding: 60px 20px; 
 }
-
-
-
-
-
-
 
 .parallax-container {
     position: relative;
@@ -193,15 +180,14 @@ nav a:not(.logo-link):hover {
 .content {
     position: relative;
     z-index: 2;
-    color: #fff;
+    color: #EFEFEC;
     text-align: center;
     padding: 50px 20px;
 }
 
-
 .content-section {
     padding: 50px;
-    background-color: #f0f0f0;
+    background-color: #EFEFEC;
 }
 
 .parallax-container {
@@ -221,7 +207,7 @@ nav a:not(.logo-link):hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #EFEFEC;
   padding: 2rem;
 }
 
@@ -235,13 +221,13 @@ nav a:not(.logo-link):hover {
 
 .tagline {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #EFEFEC;
   margin: 1rem 0 2rem;
 }
 
 .cta-button {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   padding: 15px 30px;
   border: none;
   border-radius: 50px;
@@ -251,7 +237,7 @@ nav a:not(.logo-link):hover {
 }
 
 .cta-button:hover {
-  background-color: #fff;
+  background-color: #EFEFEC;
 	color: #FD03B3;
 }
 
@@ -262,7 +248,7 @@ nav a:not(.logo-link):hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: #EFEFEC;
   padding: 2rem;
 }
 
@@ -272,13 +258,10 @@ nav a:not(.logo-link):hover {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6); /* You can change the 0.6 to adjust darkness */
+  background: rgba(0, 0, 0, 0.6); 
   z-index: 1;
 }
-
-
-
-
+ 
 .carousel-container {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -295,8 +278,8 @@ nav a:not(.logo-link):hover {
   position: relative;
   flex: 0 0 400px;
   scroll-snap-align: start;
-  background: #343434;
-  color: white;
+  background: #1a1a1a;
+  color: #EFEFEC;
   border-radius: 12px;
   padding: 1rem;
   text-align: center;
@@ -310,7 +293,7 @@ nav a:not(.logo-link):hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #FD03B3;
   border-color: #FD03B3;
-  color: white; /* make text white on hover */
+  color: #EFEFEC;
 }
 
 .carousel-item img {
@@ -321,18 +304,18 @@ nav a:not(.logo-link):hover {
 }
 
 .carousel-item h3 {
-  font-size: 1.7rem; /* Increased font size for band name */
+  font-size: 1.7rem; 
   font-weight: bold;
 }
 
 .carousel-item p {
-  font-size: 1.3rem; /* Increased font size for event details */
+  font-size: 1.3rem; 
 }
 
 .carousel-heading {
   font-size: 4rem;
   text-align: center;
-  color: #FD03B3; /* neon green */
+  color: #FD03B3;
   text-shadow: 0 0 5px magenta,
                0 0 10px black,
                0 0 20px black,
@@ -344,29 +327,24 @@ nav a:not(.logo-link):hover {
 }
 
 .carousel-container::-webkit-scrollbar {
-  height: 8px; /* Height of the horizontal scrollbar */
+  height: 8px; 
 }
 
 .carousel-container::-webkit-scrollbar-track {
-  background: #1a1a1a; /* Track background color */
+  background: #1a1a1a; 
 }
 
 .carousel-container::-webkit-scrollbar-thumb {
-  background-color: #FD03B3; /* Pink thumb */
+  background-color: #FD03B3; 
   border-radius: 10px;
 }
 .carousel-container::-webkit-scrollbar-thumb:hover {
-  background-color: #ff33cc; /* Lighter pink on hover */
+  background-color: #FD03B3; 
 }
-
-
-
-
-
 
 .stay-connected {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   padding: 60px 20px;
 }
 
@@ -419,8 +397,8 @@ nav a:not(.logo-link):hover {
 }
 
 .newsletter-form button {
-  background-color: black;
-  color: white;
+  background-color: #151213;
+  color: #EFEFEC;
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -434,13 +412,12 @@ nav a:not(.logo-link):hover {
   background-color: darkmagenta;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .newsletter-grid {
     flex-direction: column;
     text-align: center;
   }
-
+	
   .newsletter-form form {
     flex-direction: column;
   }
@@ -450,16 +427,10 @@ nav a:not(.logo-link):hover {
     width: 100%;
   }
 }
-	
-
-
-
-
-
 
 .section-heading {
   font-size: 3rem;
-  color: white;
+  color: #EFEFEC;
   text-align: center;
   position: relative;
   margin-bottom: 0rem;
@@ -475,13 +446,6 @@ nav a:not(.logo-link):hover {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
-
-
-
-
-
-
 
 .about-section {
   display: flex;
@@ -532,12 +496,8 @@ nav a:not(.logo-link):hover {
 .about-text p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #ddd;
+  color: #EFEFEC;
 }
-
-	
-	
-
 
 .band-hero {
   position: relative;
@@ -575,7 +535,6 @@ nav a:not(.logo-link):hover {
   font-weight: bold;
 }
 
-
 .band-name {
   font-size: 3.1rem;
   font-weight: 700;
@@ -588,7 +547,7 @@ nav a:not(.logo-link):hover {
   padding: 40px 20px;
   gap: 40px;
   background-color: #111;
-  color: white;
+  color: #EFEFEC;
 }
 
 .band-hero:hover .band-name {
@@ -608,7 +567,7 @@ nav a:not(.logo-link):hover {
 .details-left h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #aaa;
+  color: #EFEFEC;
 }
 
 .details-left p {
@@ -624,7 +583,7 @@ nav a:not(.logo-link):hover {
 
 .ticket-btn {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   padding: 15px 30px;
   text-align: center;
   text-decoration: none;
@@ -639,7 +598,7 @@ nav a:not(.logo-link):hover {
 }
 
 .ticket-info {
-  background-color: #1e1e1e;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 10px;
 }
@@ -656,22 +615,17 @@ nav a:not(.logo-link):hover {
 }
 
 .info-row span {
-  color: #ccc;
+  color: #EFEFEC;
 }
 
 .info-row strong {
-  color: #fff;
+  color: #EFEFEC;
 }
-
-
-
-
-
 
 .upcoming-bands {
   padding: 4rem 2rem;
-  background-color: #181818;
-  color: #fff;
+  background-color: #151213;
+  color: #EFEFEC;
   text-align: center;
 }
 
@@ -711,6 +665,7 @@ nav a:not(.logo-link):hover {
 
 .band-info {
   padding: 1rem;
+  background-color: #1a1a1a;
 }
 
 .band-info h3 {
@@ -721,17 +676,13 @@ nav a:not(.logo-link):hover {
 
 .band-info p {
   font-size: 0.95rem;
-  color: #ccc;
+  color: #EFEFEC;
 }
-
-
-
-
 
 .media-gallery {
   padding: 4rem 2rem;
   background-color: #0a0a0a; 
-  color: #fff;
+  color: #EFEFEC;
   text-align: center;
 }
 
@@ -774,18 +725,9 @@ nav a:not(.logo-link):hover {
   border: 3px solid #FD03B3;
 }
 
-
-
-
-
-
-
-
-
-
 .footer {
   background-color: #151213;
-  color: white;
+  color: #EFEFEC;
   padding: 40px 20px 20px;
 }
 
@@ -793,14 +735,14 @@ nav a:not(.logo-link):hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap; /* prevents wrapping */
+  flex-wrap: nowrap; 
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .footer-logo img {
-  width: 120px; /* controls actual logo size */
+  width: 120px; 
   height: auto;
   object-fit: contain;
 }
@@ -808,17 +750,13 @@ nav a:not(.logo-link):hover {
 .footer-divider {
   width: 2px;
   height: 60px;
-  background-color: white;
+  background-color: #EFEFEC;
 }
-
-	
-	
 
 html {
   scroll-behavior: smooth;
 }
 	
-
 html, body {
   height: 100%;
   margin: 0;
@@ -835,15 +773,10 @@ html, body {
   margin-top: auto;
 }
 
-
-
-
-
-
 .team-section {
   padding: 80px 20px;
-  background-color: #0a0a0a;
-  color: white;
+  background-color: #000;
+  color: #EFEFEC;
   text-align: center;
 }
 
@@ -905,12 +838,10 @@ html, body {
   line-height: 1.5;
 }
 
-
-
 .mvv-section {
   padding: 80px 20px;
-  background-color: #0a0a0a; /* Dark rock backdrop */
-  color: white;
+  background-color: #151213; 
+  color: #EFEFEC;
   text-align: center;
 }
 
@@ -964,14 +895,10 @@ html, body {
   transform: translateY(-5px);
 }
 
-
-
-
-
-
 .contact-section {
   padding: 80px 20px;
-  color: white;
+  color: #EFEFEC;
+  background-color: #151213;
 }
 
 .contact-section h2 {
@@ -1042,7 +969,7 @@ html, body {
 
 .contact-form button {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   border: none;
   padding: 14px;
   font-size: 1rem;
@@ -1056,13 +983,9 @@ html, body {
   background-color: #d00294;
 }
 
-
-
-
-
 .cta-tagline {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #EFEFEC;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -1074,7 +997,7 @@ html, body {
 	align-items: center;
 	justify-content: center;
   padding: 100px 20px;
-  color: #fff;
+  color: #EFEFEC;
   text-align: center;
   position: relative;
 }
@@ -1141,7 +1064,7 @@ html, body {
 }
 
 .cta-btn:hover {
-  background-color: #fff;
+  background-color: #EFEFEC;
   color: #FD03B3;
 }
 
@@ -1153,7 +1076,7 @@ html, body {
 
 .cta-btn.alt:hover {
   background-color: #FD03B3;
-  color: #FFFFFF;
+  color: #EFEFEC;
 }
 
 .big-btn {
@@ -1169,18 +1092,13 @@ html, body {
 }
 
 .big-btn:hover {
-  background-color: #fff;
+  background-color: #EFEFEC;
   color: #FD03B3;
 }
 
-
-
-
-
-	
 .footer {
   background-color: #111;
-  color: white;
+  color: #EFEFEC;
   padding: 40px 20px 20px;
 }
 
@@ -1188,14 +1106,14 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap; /* prevents wrapping */
+  flex-wrap: nowrap; 
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .footer-logo img {
-  width: 120px; /* controls actual logo size */
+  width: 120px;
   height: auto;
   object-fit: contain;
 }
@@ -1203,7 +1121,7 @@ html, body {
 .footer-divider {
   width: 2px;
   height: 60px;
-  background-color: white;
+  background-color: #EFEFEC;
 }
 
 .footer-socials {
@@ -1228,17 +1146,10 @@ html, body {
   color: #aaa;
   font-size: 0.9rem;
 }
-	
-
-
-
-
-
-
 
 .venue-listing {
-  background-color: black;
-  color: white;
+  background-color: #151213;
+  color: #EFEFEC;
   padding: 4rem 2rem;
 }
 
@@ -1276,14 +1187,14 @@ html, body {
   display: block;
   width: 100px;
   height: 4px;
-  background-color: white;
+  background-color: #EFEFEC;
   margin: 10px auto 0;
   border-radius: 2px;
 }
 
 .venue-tagline {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #EFEFEC;
 }
 
 .venue-info-cards {
@@ -1295,7 +1206,7 @@ html, body {
 }
 
 .info-card {
-  background: #151213;
+  background: black;
   border: 2px solid #FD03B3;
   border-radius: 10px;
   padding: 1.2rem;
@@ -1346,15 +1257,13 @@ html, body {
   border: 3px solid #FD03B3;
 }
 
-
-
 .booking-cta {
   text-align: center;
   margin-top: 1rem;
 }
 
 .booking-form-section {
-  background-color: #151213;
+  background-color: #1a1a1a;
   padding: 3rem 2rem;
   border-radius: 12px;
   max-width: 900px;
@@ -1364,7 +1273,7 @@ html, body {
 
 .booking-form-section h2 {
   font-size: 2.8rem;
-  color: white;
+  color: #EFEFEC;
   margin-bottom: 50px;
   text-align: center;
   position: relative;
@@ -1399,7 +1308,7 @@ html, body {
   padding: 1rem;
   background-color: #0a0a0a;
   border: 2px solid #FD03B3;
-  color: white;
+  color: #EFEFEC;
   border-radius: 8px;
   font-size: 1rem;
   transition: border 0.3s ease;
@@ -1418,7 +1327,7 @@ html, body {
 
 .cta-button.pink {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1rem;
@@ -1434,7 +1343,7 @@ html, body {
 }
 .booking-page-button {
   background-color: #FD03B3;
-  color: white;
+  color: #EFEFEC;
   padding: 1.5rem 3rem;
   border-radius: 8px;
   font-size: 1.3rem;
@@ -1470,7 +1379,7 @@ html, body {
   }
 
   .image-text-container {
-	  background-color: #151213;
+	background-color: #151213;
     flex-direction: column;
   }
 }
@@ -1491,20 +1400,17 @@ html, body {
   }
 }
 
-
-
 .corporate-hero {
   background-color: #FD03B3;
   padding: 2rem 2rem;
   text-align: center;
-  color: white;
+  color: #EFEFEC;
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 2px;
   margin-top: 2rem;
 }
 
-/* Layout Wrapper */
 .corporate-layout {
   display: flex;
   gap: 2rem;
@@ -1512,60 +1418,56 @@ html, body {
   flex-wrap: wrap;
 }
 
-
-
-
-/* Sidebar Nav */
 .sidebar {
   background-color: #FD03B3;
   color: white;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 2rem;
   border-radius: 12px;
   position: sticky;
   top: 20px;
   height: fit-content;
+  width: 250px;
   display: block;
 }
 
 .sidebar h2 {
   font-size: 1.7rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
   text-transform: uppercase;
 }
 
 .sidebar-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .sidebar-heading {
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: #EFEFEC;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   transition: text-shadow 0.3s;
 }
 
 .sidebar-heading:hover {
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px #EFEFEC;
 }
 
 .sidebar-sub a {
   display: block;
   margin-left: 1rem;
   font-size: 0.95rem;
-  color: white;
+  color: #EFEFEC;
   text-decoration: none;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
   transition: text-shadow 0.3s;
 }
 
 .sidebar-sub a:hover {
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px #EFEFEC;
 }
 
-/* Main Content */
 .corporate-content {
   flex: 3;
   padding: 1rem;
@@ -1588,7 +1490,6 @@ html, body {
   color: black;
 }
 
-/* Styled Image */
 .boxed-image-cor {
   border: 5px solid #FD03B3;
   border-radius: 12px;
@@ -1605,24 +1506,18 @@ html, body {
 }
 
 .main-content {
-  max-width: 800px;      /* Controls line length for readability */
-  margin-left: auto;     /* Center if no sidebar */
+  max-width: 800px;      
+  margin-left: auto;     
   margin-right: auto;
-  padding: 2rem;         /* Gives space inside the box */
+  padding: 2rem;       
 }
 
 .corporate-layout {
-  display: flex;              /* Makes sidebar and content sit side-by-side */
-  align-items: flex-start;    /* Aligns them at the top */
-  gap: 2rem;                  /* Adds spacing between sidebar and content */
-  padding: 2rem;              /* Optional: adds space inside the container */
+  display: flex;             
+  align-items: flex-start;    
+  gap: 2rem;                 
+  padding: 2rem;             
 }
-
-
-
-
-
-
 
 @media (max-width: 600px) {
   .footer-content {

@@ -129,10 +129,10 @@ nav a:not(.logo-link):hover {
 
 .image-text-container {
   display: flex;
-  align-items: center; /* vertically align */
-  gap: 50px; /* optional spacing between items */
-  padding: 20px 100px; /* top/bottom + side padding */
-  margin: 10px 0;     /* space above and below each section */
+  align-items: center;
+  gap: 50px;
+  padding: 20px 100px;
+  margin: 10px 0;
 }
  
 .text-content h2,
@@ -168,12 +168,12 @@ nav a:not(.logo-link):hover {
 
 .parallax-container {
     position: relative;
-    height: 600px; /* Adjust based on how large you want your parallax effect to be */
+    height: 600px;
     overflow: hidden;
 }
 
 .parallax {
-    background-image: url("../images/mainpit.jpg");
+    background-image: url("../images/hard_rock_concert1.jpeg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -182,7 +182,7 @@ nav a:not(.logo-link):hover {
 }
 
 .parallax-2 {
-    background-image: url("../images/mainpit3.png");
+    background-image: url("../images/hard_rock_concert2.jpeg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -580,7 +580,6 @@ nav a:not(.logo-link):hover {
   font-size: 3.1rem;
   font-weight: 700;
   transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-
 }
 
 .band-details {
@@ -785,7 +784,7 @@ nav a:not(.logo-link):hover {
 
 
 .footer {
-  background-color: #111;
+  background-color: #151213;
   color: white;
   padding: 40px 20px 20px;
 }
@@ -1238,7 +1237,7 @@ html, body {
 
 
 .venue-listing {
-  background-color: #0a0a0a;
+  background-color: black;
   color: white;
   padding: 4rem 2rem;
 }
@@ -1296,7 +1295,7 @@ html, body {
 }
 
 .info-card {
-  background: #1a1a1a;
+  background: #151213;
   border: 2px solid #FD03B3;
   border-radius: 10px;
   padding: 1.2rem;
@@ -1355,7 +1354,7 @@ html, body {
 }
 
 .booking-form-section {
-  background-color: #1a1a1a;
+  background-color: #151213;
   padding: 3rem 2rem;
   border-radius: 12px;
   max-width: 900px;
@@ -1471,6 +1470,7 @@ html, body {
   }
 
   .image-text-container {
+	  background-color: #151213;
     flex-direction: column;
   }
 }
@@ -1604,6 +1604,19 @@ html, body {
   color: #FD03B3;
 }
 
+.main-content {
+  max-width: 800px;      /* Controls line length for readability */
+  margin-left: auto;     /* Center if no sidebar */
+  margin-right: auto;
+  padding: 2rem;         /* Gives space inside the box */
+}
+
+.corporate-layout {
+  display: flex;              /* Makes sidebar and content sit side-by-side */
+  align-items: flex-start;    /* Aligns them at the top */
+  gap: 2rem;                  /* Adds spacing between sidebar and content */
+  padding: 2rem;              /* Optional: adds space inside the container */
+}
 
 
 
